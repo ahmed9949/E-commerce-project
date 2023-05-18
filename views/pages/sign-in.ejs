@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarab</title>
+    <link rel="stylesheet" href="CSS/styleform.css">
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="container">
+            <div class="navigation">
+                <div class="logo">
+                    <img src="images/logo scarab.jpg" width="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <a class="close-icon" href="home"><ion-icon name="close-circle"></ion-icon></a>
+        <div class="form-box login">
+        <h2>Login</h2>
+
+        <form action='' method="post" onsubmit="return validate(this)">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required >
+                <label>Email</label>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required >
+                <label>Password</label>
+                <div class="error"></div>
+            </div>
+            <div class="rememberme">
+            <label ><input type="checkbox"> Remember me</label>
+            <a href="#">Forget Password?</a>
+            </div>
+            <button type="submit" class="btn-submit">Log-in</button>
+            <div class="registerlink">
+                <p>Don't have an account?
+                    <a href="sign-up" class="registerlink">Register</a>
+                </p>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="200px";
+            }
+            else 
+            {
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script> 
+
+    <script src="form.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

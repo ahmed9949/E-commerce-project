@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sacrab </title>
+    <link rel="stylesheet" href="CSS/cart-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="small-container cart-box">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-1.jpg" alt="error">
+                    <div>
+                        <br>
+                        
+                        <p class="text-product">Red Shirt</p>
+                        <small>Price: 249.99 EGP</small><br>
+                        <br>
+                        <a class="remove-link" href="#">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input class="box-range"  type="number" value="1"></td>
+            <td>249.99 EGP</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product-6.jpg" alt="error">
+                    <div>
+                        <br>
+                        <p class="text-product">Black Shirt - PUMA</p>
+                        <small>Price: 259.99 EGP</small><br>
+                        <br>
+                        <a class="remove-link" href="#">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input class="box-range"  type="number" value="1"></td>
+            <td>259.99 EGP</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product-5.jpg" alt="error">
+                    <div>
+                        <br>
+                        <p class="text-product">Light Grey Shoes</p>
+                        <small>Price: 199.99 EGP</small><br>
+                        <br>
+                        <a class="remove-link" href="#">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input class="box-range" type="number" value="1"></td>
+            <td>199.99 EGP</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        
+        <a class="checkout-btn" href="#"><p class="checkout-text">Proceed to checkout</p></a>
+<table>
+    <tr>
+        <td>SubTotal:</td>
+        <td>709.97 EGP</td>
+    </tr>
+    <tr>
+        <td>TAX:</td>
+        <td>20.00 EGP</td>
+    </tr>
+    <tr>
+        <td>Total:</td>
+        <td>729.97 EGP</td>
+    </tr>
+</table>
+
+    </div>
+
+</div>
+
+<!-- js for toggle menu -->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else 
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script> 
+</body>
+</html>
