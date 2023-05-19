@@ -27,19 +27,19 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/home',(req, res) => {
-        res.render("./pages/home")
+        res.render("home")
     })
 
     app.get('/sign-in',(req, res) => {
-        res.render("./pages/sign-in")
+        res.render("sign-in")
     })
 
     app.get('/sign-up',(req, res) => {
-        res.render("./pages/sign-up")
+        res.render("sign-up")
     })
 
     app.get('/products.html',(req, res) => {
-        res.render("./pages/products")
+        res.render("products")
     })
 
     app.get('/products-details.html',(req, res) => {
@@ -47,15 +47,15 @@ app.get('/home',(req, res) => {
     })
 
     app.get('/cart.html',(req, res) => {
-        res.render("./pages/cart")
+        res.render("cart")
     })
 
     app.get('/contactus.html',(req, res) => {
-        res.render("./pages/contact")
+        res.render("contact")
     })
 
     app.get('/About.html',(req, res) => {
-        res.render("./pages/about")
+        res.render("about")
     })
 
 
