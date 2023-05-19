@@ -1,5 +1,9 @@
 const express = require('express')
 const app = express()
+
+const workoutRoutes= require('./routes/authRoute')
+//use env file
+require ('dotenv').config()
 const port =6005
 app.set('view engine','ejs')
 app.use(express.static('public'))
@@ -21,48 +25,17 @@ liveReloadServer.server.once("connection", () => {
 
 
 
-
-app.get('/',(req,res)=>{
-    res.send('helooooooo434343oooooooooo')
+app.listen(process.env.PORT, () => {
+    console.log(' Hi',process.env.PORT)
 })
 
-app.get('/home',(req, res) => {
-        res.render("./pages/home")
-    })
 
-    app.get('/sign-in',(req, res) => {
-        res.render("./pages/sign-in")
-    })
-
-    app.get('/sign-up',(req, res) => {
-        res.render("./pages/sign-up")
-    })
-
-    app.get('/products.html',(req, res) => {
-        res.render("./pages/products")
-    })
-
-    app.get('/products-details.html',(req, res) => {
-        res.render("./partials/products-details")
-    })
-
-    app.get('/cart.html',(req, res) => {
-        res.render("./pages/cart")
-    })
-
-    app.get('/contactus.html',(req, res) => {
-        res.render("./pages/contact")
-    })
-
-    app.get('/About.html',(req, res) => {
-        res.render("./pages/about")
-    })
+//routes
+app.use('/api',workoutRoutes)
 
 
 app.use((req,res) =>{
     res.status(404).send("Sorry can't find that!")
 })
 
-app.listen(port,()=>{
-    console.log(`example app listening at http://localhost:${port}`)
-})
+
