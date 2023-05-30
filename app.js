@@ -27,35 +27,41 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/home',(req, res) => {
-        res.render("home")
+        res.render("home",{title: 'Home'})
+        
+    })
+
+    app.get('/index.html',(req, res) => {
+        res.redirect("home")
+        
     })
 
     app.get('/sign-in',(req, res) => {
-        res.render("sign-in")
+        res.render("sign-in",{title: 'Sign-in'})
     })
 
     app.get('/sign-up',(req, res) => {
-        res.render("sign-up")
+        res.render("sign-up",{title: 'Sign-up'})
     })
 
     app.get('/products.html',(req, res) => {
-        res.render("products")
+        res.render("products",{title: 'Products'})
     })
 
     app.get('/products-details.html',(req, res) => {
-        res.render("./partials/products-details")
+        res.render("./partials/products-details",{title: 'Product'})
     })
 
     app.get('/cart.html',(req, res) => {
-        res.render("cart")
+        res.render("cart",{title: 'Cart'})
     })
 
     app.get('/contactus.html',(req, res) => {
-        res.render("contact")
+        res.render("contact",{title: 'contact'})
     })
 
     app.get('/About.html',(req, res) => {
-        res.render("about")
+        res.render("about",{title: 'About Us'})
     })
 
 

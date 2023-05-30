@@ -1,0 +1,31 @@
+
+#chat_with_us{
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    align-items: center;
+    z-index: 1000;
+    background-color: transparent;
+    border-radius: 40px;
+}
+
+.icon-wrapper col-auto{
+    margin: 0;
+    padding: 4px;
+}
+
+.messenger{
+    width: 60px;
+    margin-top: 4px;
+}
+
+.text-wrapper col-auto{
+    align-self: center;
+    margin-left: -24px;
+    padding: 5px 5px 5px 5px;
+}
+
+.chatw_us{
+    text-decoration: none;
+    color: white;
+}

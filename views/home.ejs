@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sacrab </title>
+    <title> Scarab | <%= title %>  </title>
     <link rel="stylesheet" href="CSS/homepage.css">
+    <link rel="stylesheet" href="CSS/chatwithUs.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <% include('partials/head') %>
+    <%- include('partials/head.ejs') %>
 
 </head>
 <body>
-    <% include('partials/header') %>
+    <%- include('partials/nav.ejs') %>
 
     <div class="row">
         <div class="col">
@@ -313,6 +314,7 @@
 
 
 
+
 <!-- js for toggle menu -->
 <script>
     var MenuItems=document.getElementById("MenuItems");
@@ -329,7 +331,8 @@
         }
     }
 </script>
+<%- include('./partials/chatWithUs.ejs') %>
+<%- include('./partials/footer.ejs') %>
 
-<% include('partials/footer') %>
 </body>
 </html>
