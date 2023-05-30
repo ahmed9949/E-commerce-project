@@ -1,0 +1,30 @@
+
+.search{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background:white;
+    border-radius: 30px;
+    align-items: center;
+    margin-left:50px;
+}
+
+.search:hover input{
+    width: 275px;
+    margin-left:5px ;
+}
+
+.search input{
+    width:0;
+    outline:none;
+    border:none;
+    font-weight: 600;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.search-icon{
+    width: 25px;
+}
+ 
