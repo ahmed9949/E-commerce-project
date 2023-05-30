@@ -40,6 +40,10 @@ app.get('/home',(req, res) => {
         res.render("sign-in",{title: 'Sign-in'})
     })
 
+    app.get('/form.html',(req, res) => {
+        res.redirect("sign-in")
+    })
+
     app.get('/sign-up',(req, res) => {
         res.render("sign-up",{title: 'Sign-up'})
     })

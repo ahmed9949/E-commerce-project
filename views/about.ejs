@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scarab | <%= title %> </title>
     <link rel="stylesheet" type="text/css" href="CSS/About.css">
+    <link rel="stylesheet" href="CSS/chatwithUs.css">
+    <link rel="stylesheet" href="CSS/searchBar.css">
    
 </head>
 
 <body>
     
-  
+    <%- include('partials/nav.ejs') %>
     <div class="about">
         <div class="inner-container">
             <h1>About Us</h1>
@@ -42,6 +44,6 @@
             }
         }
     </script>
-    
+     <%- include('partials/chatWithUs.ejs') %>
 </body>
 </html>
