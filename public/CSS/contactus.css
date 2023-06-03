@@ -15,7 +15,7 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
-	
+	margin-top: 0px;
 	width: 100%;
 }
 nav{
@@ -103,7 +103,7 @@ z-index: 99;
 
 .container
 {
-margin-top: 100px;
+margin-top: 0px;
 padding: 40px;
 }
 
@@ -367,9 +367,6 @@ p
 color:#555;
 }
 
-
-
-
 .row
 {
   display:flex;
@@ -380,10 +377,10 @@ color:#555;
 
 .header
 {
-  background:radial-gradient(#fff,#ffd6d6);
+  background:blanchedalmond;
 
 }
-.header .row 
+/* .header .row 
 {
-margin-top: 70px;
-} 
+margin-top: 0px;
+}  */
